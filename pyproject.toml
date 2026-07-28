@@ -18,3 +18,8 @@ members = [
 [tool.uv.sources]
 fusion-api = { workspace = true }
 fusion-core = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
