@@ -6,8 +6,9 @@ readme = "README.md"
 authors = [
     { name = "aidan138", email = "126530615+aidan138@users.noreply.github.com" }
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
+    "av2==0.3.6",
     "torch>=2.13.0",
 ]
 
