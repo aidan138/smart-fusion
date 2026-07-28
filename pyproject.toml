@@ -1,0 +1,20 @@
+[project]
+name = "smart-fusion"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fusion-api",
+    "fusion-core",
+]
+
+[tool.uv.workspace]
+members = [
+    "packages/fusion-core",
+    "packages/fusion-api",
+]
+
+[tool.uv.sources]
+fusion-api = { workspace = true }
+fusion-core = { workspace = true }

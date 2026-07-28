@@ -1,0 +1,35 @@
+version = 1
+revision = 2
+requires-python = ">=3.13"
+
+[manifest]
+members = [
+    "fusion-api",
+    "fusion-core",
+    "smart-fusion",
+]
+
+[[package]]
+name = "fusion-api"
+version = "0.1.0"
+source = { editable = "packages/fusion-api" }
+
+[[package]]
+name = "fusion-core"
+version = "0.1.0"
+source = { editable = "packages/fusion-core" }
+
+[[package]]
+name = "smart-fusion"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "fusion-api" },
+    { name = "fusion-core" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "fusion-api", editable = "packages/fusion-api" },
+    { name = "fusion-core", editable = "packages/fusion-core" },
+]
