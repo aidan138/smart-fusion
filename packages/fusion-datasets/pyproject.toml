@@ -1,16 +1,17 @@
 [project]
-name = "fusion-core"
+name = "fusion-datasets"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-authors = [
-    { name = "aidan138", email = "126530615+aidan138@users.noreply.github.com" }
-]
 requires-python = ">=3.12"
 dependencies = [
-    "torch>=2.13.0",
+    "av2==0.3.6",
+    "fusion-core",
 ]
 
 [build-system]
-requires = ["uv_build>=0.8.2,<0.9.0"]
+requires = ["uv_build>=0.8.12,<0.9.0"]
 build-backend = "uv_build"
+
+[tool.uv.sources]
+fusion-core = { workspace = true }

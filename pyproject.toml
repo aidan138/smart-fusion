@@ -13,6 +13,7 @@ dependencies = [
 members = [
     "packages/fusion-core",
     "packages/fusion-api",
+    "packages/fusion-datasets",
 ]
 
 [tool.uv.sources]
