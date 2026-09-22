@@ -211,3 +211,9 @@ __marimo__/
 .claude
 
 /data/
+
+# luarocks build files (dataset file)
+*.src.rock
+*.zip
+*.tar.gz
+*.t7
